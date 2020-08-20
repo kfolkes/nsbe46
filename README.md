@@ -4,7 +4,7 @@
 
 | Files             |  Content                                   |
 |----------------------|--------------------------------------------|
-| `application.py`           | Python 3.6 Alpine Base image installing pipenv, yarn, ssh, & vue cli             |
+| `application.py`          | Python 3.6 Alpine Base image installing pipenv, yarn, ssh, & vue cli             |
 | `requirements.txt`       | OpenSSH SSH daemon configuration file                       |
 
 
@@ -51,18 +51,18 @@ Once signed in, you can run Azure commands with the Azure CLI to work with resou
 # Clone this sample 
 
 ```
-git clone https://github.com/Azure-Samples/python-docs-hello-world
+git clone https://github.com/kfolkes/nsbe46
 ```
 Then go into that folder:
 
 ```
-cd python-docs-hello-world
+cd nsbe46
 ```
 
 The sample code contains an application.py file, which tells App Service that the code contains a Flask app.
 
 
-# Let's get "thangz" running 
+# Let's get "thangz" running (locally)
 
 First create a virtual environment and install dependencies:
 ```
@@ -82,7 +82,7 @@ Open a web browser, and go to the sample app at http://localhost:5000/. The app 
 
 In your terminal window, press Ctrl+C to exit the Flask development server.
 
-# Now it's time to Deploy 
+# Now it's time to deploy 
 ```
 az webapp up --sku F1 -n <app-name>
 
@@ -97,6 +97,7 @@ az webapp up --sku F1 -n <app-name>
   
 ![GitHub Logo](/images/deployedapp.png)
 
+
 # Browse to the app
 Browse to the deployed application in your web browser at the URL http://<app-name>.azurewebsites.net.
 The Python sample code is running a Linux container in App Service using a built-in image.
@@ -110,6 +111,7 @@ For more information, please see the [Python on App Service quickstart](https://
 Congratulations! You've deployed your first Python app to App Service. You So Smart!
 
 # Redeploying updates
+
 In your favorite code editor, open application.py and update the hello function as follows. This change adds a print statement to generate logging output that you work with in the next sectioni or you can change it to whatever you want. 
 
 
@@ -130,3 +132,10 @@ az webapp up
 
 This command uses values that are cached locally in the .azure/config file, including the app name, resource group, and App Service plan.
 
+
+
+## Notes and References 
+ - Flask: https://flask.palletsprojects.com/en/1.1.x/quickstart/
+ - Python Configurations: https://docs.microsoft.com/en-us/azure/app-service/configure-language-python
+ 
+ 
