@@ -162,6 +162,6 @@ This command uses values that are cached locally in the .azure/config file, incl
 
 - Krystal Folkes - Azure Support Technical Advisor
 - Team: Azure App Service, Open Source Software OSS
-- Email: Krystal.folkes@microsoft.com 
+- LinkedIn: https://www.linkedin.com/in/krystalfolkes/
 
  
