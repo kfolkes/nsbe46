@@ -102,7 +102,7 @@ az webapp up --sku F1 -n <app-name>
 Browse to the deployed application in your web browser at the URL http://<app-name>.azurewebsites.net.
 The Python sample code is running a Linux container in App Service using a built-in image.
 
-![depolyedApp](/success_az.png)
+![depolyedApp](/success_to_az.png)
 # Python Flask sample for Azure App Service (Linux)
 
 This is a minimal sample app that demonstrates how to run a Python Flask application on Azure App Service on Linux.
