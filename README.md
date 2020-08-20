@@ -95,14 +95,14 @@ az webapp up --sku F1 -n <app-name>
   
   The command may take a few minutes to complete. While running, it provides messages about creating the resource group, the App Service plan and hosting app, configuring logging, then performing ZIP deployment. It then gives the message, "You can launch the app at http://<app-name>.azurewebsites.net", which is the app's URL on Azure.
   
-![CMD](/images/deployaz.png)
+![CMD](/deployaz.png)
 
 
 # Browse to the app
 Browse to the deployed application in your web browser at the URL http://<app-name>.azurewebsites.net.
 The Python sample code is running a Linux container in App Service using a built-in image.
 
-![depolyedApp](/images/success_az.png)
+![depolyedApp](/success_az.png)
 # Python Flask sample for Azure App Service (Linux)
 
 This is a minimal sample app that demonstrates how to run a Python Flask application on Azure App Service on Linux.
