@@ -1,4 +1,4 @@
-# NSBE 46 💻 | Azure Web Apps for Containers 📦💙 
+# NSBE 46 💻 | Azure Web Apps for Linux 📦💙 
 
 ### Repository Contents 
 
@@ -26,10 +26,80 @@ Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure
 
 # Now we rolling ... 
 
-Open a terminal window and check your Python version is 3.6 or higher:
+Open a terminal/cmd window and check your Python version is 3.6 or higher:
 
-'py -3 --version'
+```
+py -3 --version
+```
 
+Check that your Azure CLI version is 2.0.80 or higher:
+
+```
+az --version
+```
+
+Then sign in to Azure through the CLI:
+
+```
+az login
+```
+
+This command opens a browser to gather your credentials. When the command finishes, it shows JSON output containing information about your subscriptions.
+
+Once signed in, you can run Azure commands with the Azure CLI to work with resources in your subscription.
+
+# Clone this sample 
+
+```
+git clone https://github.com/Azure-Samples/python-docs-hello-world
+```
+Then go into that folder:
+
+```
+cd python-docs-hello-world
+```
+
+The sample code contains an application.py file, which tells App Service that the code contains a Flask app.
+
+
+# Let's get "thangz" running 
+
+First create a virtual environment and install dependencies:
+```
+py -3 -m venv env
+env\scripts\activate
+pip install -r requirements.txt
+```
+
+Then set the FLASK_APP environment variable to the app's entry module and run the Flask development server:
+```
+SET FLASK_APP=application.py
+flask run
+
+```
+
+Open a web browser, and go to the sample app at http://localhost:5000/. The app displays the message Hello World!.
+
+In your terminal window, press Ctrl+C to exit the Flask development server.
+
+# Now it's time to Deploy 
+```
+az webapp up --sku F1 -n <app-name>
+
+```
+- If the az command is not recognized, be sure you have the Azure CLI installed as described in Set up your initial environment.
+- Replace <app_name> with a name that's unique across all of Azure (valid characters are a-z, 0-9, and -). A good pattern is to use a combination of your company name and an app identifier.
+- The --sku F1 argument creates the web app on the Free pricing tier. Omit this argument to use a faster premium tier, which incurs an hourly cost.
+- You can optionally include the argument -l <location-name> where <location_name> is an Azure region such as centralus, eastasia, westeurope, koreasouth, brazilsouth, centralindia, and so on. You can retrieve a list of allowable regions for your Azure account by running the az account list-locations command.
+  
+  
+  The command may take a few minutes to complete. While running, it provides messages about creating the resource group, the App Service plan and hosting app, configuring logging, then performing ZIP deployment. It then gives the message, "You can launch the app at http://<app-name>.azurewebsites.net", which is the app's URL on Azure.
+  
+![GitHub Logo](/images/deployedapp.png)
+
+# Browse to the app
+Browse to the deployed application in your web browser at the URL http://<app-name>.azurewebsites.net.
+The Python sample code is running a Linux container in App Service using a built-in image.
 
 # Python Flask sample for Azure App Service (Linux)
 
@@ -37,6 +107,26 @@ This is a minimal sample app that demonstrates how to run a Python Flask applica
 
 For more information, please see the [Python on App Service quickstart](https://docs.microsoft.com/azure/app-service/containers/quickstart-python).
 
-## Contributing
+Congratulations! You've deployed your first Python app to App Service. You So Smart!
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+# Redeploying updates
+In your favorite code editor, open application.py and update the hello function as follows. This change adds a print statement to generate logging output that you work with in the next sectioni or you can change it to whatever you want. 
+
+
+```
+def hello():
+    print("Handling request to home page.")
+    return "Wha Gwan NSBE!"
+
+```
+Save your changes and exit the editor.
+
+Redeploy the app using the az webapp up command again:
+
+```
+az webapp up
+
+```
+
+This command uses values that are cached locally in the .azure/config file, including the app name, resource group, and App Service plan.
+
