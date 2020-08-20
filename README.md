@@ -4,7 +4,7 @@
 
 | Files             |  Content                                   |
 |----------------------|--------------------------------------------|
-| `application.py`         | python Flask App         |
+| `application.py`         | Python Flask App |
 | `requirements.txt`       | File containing a list of items to be installed using pip install|
 
 
@@ -100,6 +100,7 @@ Open a web browser, and go to the sample app at http://localhost:5000/. The app 
 
 In your terminal window, press Ctrl+C to exit the Flask development server.
 
+
 # 5.)  Now it's time to deploy 
 ```
 az webapp up --sku F1 -n <app-name>
@@ -111,9 +112,6 @@ az webapp up --sku F1 -n <app-name>
 
 - The --sku F1 argument creates the web app on the Free pricing tier. Omit this argument to use a faster premium tier, which incurs an hourly cost.
 
-- You can optionally include the argument -l <location-name> where <location_name> is an Azure region such as centralus, eastasia, westeurope, koreasouth, brazilsouth, centralindia, and so on. You can retrieve a list of allowable regions for your Azure account by running the az account list-locations command.
-  
-  
  * The command may take a few minutes to complete. While running, it provides messages about creating the resource group, the App Service plan and hosting app, configuring logging, then performing ZIP deployment. It then gives the message, "You can launch the app at http://<app-name>.azurewebsites.net", which is the app's URL on Azure.
   
 ![CMD](/deployaz.png)
