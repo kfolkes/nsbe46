@@ -139,3 +139,9 @@ This command uses values that are cached locally in the .azure/config file, incl
  - Python Configurations: https://docs.microsoft.com/en-us/azure/app-service/configure-language-python
  
  
+## Instructor Information 
+Krystal Folkes - Azure Support Technical Advisor,
+Team: Azure App Service, Open Source Software OSS
+Email: Krystal.folkes@microsoft.com 
+
+ 
