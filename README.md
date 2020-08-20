@@ -129,7 +129,7 @@ This is a minimal sample app that demonstrates how to run a Python Flask applica
 
 Congratulations! You've deployed your first Python app to App Service. You are so smart!
 
-# 7.) Extra Redeploying updates to your code
+# 7.) Redeploying updates to your code (Extra Credit) 
 
 In your favorite code editor (Notepad works too), open application.py and update the hello function as follows. This change adds a print statement to generate logging output that you work with in the next sectioni or you can change it to whatever you want. 
 
