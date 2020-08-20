@@ -34,6 +34,7 @@ Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure
 Once you have your applications installed we need to verify the versions.
 
 Open a terminal/cmd window and check your Python version is 3.6 or higher:
+
 CMD: 
 ```
 py -3 --version
@@ -89,6 +90,7 @@ The sample code contains an application.py file, which tells App Service that th
 In the same command prompt terminal. 
 
 First create a virtual environment and install dependencies:
+
 CMD: 
 ```
 py -3 -m venv env
@@ -103,6 +105,7 @@ pip install -r requirements.txt
 ```
 
 Then set the FLASK_APP environment variable to the app's entry module and run the Flask development server:
+
 CMD: 
 ```
 SET FLASK_APP=application.py
