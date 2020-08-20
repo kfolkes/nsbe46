@@ -155,7 +155,7 @@ This command uses values that are cached locally in the .azure/config file, incl
 ### Notes and References 
  - Flask: https://flask.palletsprojects.com/en/1.1.x/quickstart/
  - Python Configurations: https://docs.microsoft.com/en-us/azure/app-service/configure-language-python
- * Azure for Students Starter | use select Azure products like App Services for free - no credit card required with academic verification
+ * [Azure for Students Starter](https://azure.microsoft.com/en-us/free/students/starter/) | use select Azure products like App Services for free - no credit card required with academic verification
  
  
 ### Instructor Information 
