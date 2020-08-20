@@ -4,16 +4,16 @@
 
 | Files             |  Content                                   |
 |----------------------|--------------------------------------------|
-| `application.py`          | Python 3.6 Alpine Base image installing pipenv, yarn, ssh, & vue cli             |
-| `requirements.txt`       | OpenSSH SSH daemon configuration file                       |
+| `application.py`         | python Flask App         |
+| `requirements.txt`       | File containing a list of items to be installed using pip install|
 
 
 # Set up your Azure Account 
 Have an Azure account with an active subscription.
 
-Azure for Students | $100 in Azure for 12 months with free tier of services - no credit card required with academic verification
-Azure for Students Starter | use select Azure products like App Services for free - no credit card required with academic verification
-Azure Free Account | $200 in Azure for one month with free tier of services - requires a credit card and probably the best fit for faculty evaluating Azure for course instruction unless your organization has a grant or enterprise agreement.
+* Azure for Students | $100 in Azure for 12 months with free tier of services - no credit card required with academic verification
+* Azure for Students Starter | use select Azure products like App Services for free - no credit card required with academic verification
+* Azure Free Account | $200 in Azure for one month with free tier of services - requires a credit card and probably the best fit for faculty evaluating Azure for course instruction unless your organization has a grant or enterprise agreement.
 
 # Install Python 3.6 or Higher
 
@@ -95,7 +95,7 @@ az webapp up --sku F1 -n <app-name>
   
   The command may take a few minutes to complete. While running, it provides messages about creating the resource group, the App Service plan and hosting app, configuring logging, then performing ZIP deployment. It then gives the message, "You can launch the app at http://<app-name>.azurewebsites.net", which is the app's URL on Azure.
   
-![GitHub Logo](/images/deployedapp.png)
+![CMD](/images/deployedapp.png)
 
 
 # Browse to the app
