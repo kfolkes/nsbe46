@@ -8,7 +8,7 @@
 | `requirements.txt`       | File containing a list of items to be installed using pip install|
 
 
-# 1.) Set up your Azure Account 
+# 1.) Set up your Azure Account and Installations 
 Have an Azure account with an active subscription.
 
 * NSBE Collegiates - [Azure for Students](https://azure.microsoft.com/en-us/free/students/)| $100 in Azure for 12 months with free tier of services - no credit card required with academic verification
@@ -21,6 +21,8 @@ You download both applications at the same time.
 ## 1.a) Install Python 3.6 or Higher
 
 Install [Python 3.6 or higher](https://www.python.org/downloads/).
+** Check the box that states to set download path. 
+
 
 ## 1.b) Install Azure CLI 2.0.80 
 
@@ -160,8 +162,8 @@ This command uses values that are cached locally in the .azure/config file, incl
  
 ### Instructor Information 
 
-Krystal Folkes - Azure Support Technical Advisor,
-Team: Azure App Service, Open Source Software OSS
-Email: Krystal.folkes@microsoft.com 
+- Krystal Folkes - Azure Support Technical Advisor
+- Team: Azure App Service, Open Source Software OSS
+- Email: Krystal.folkes@microsoft.com 
 
  
