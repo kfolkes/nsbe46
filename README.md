@@ -11,7 +11,7 @@
 # 1.) Set up your Azure Account and Installations 
 Have an Azure account with an active subscription.
 
-* NSBE Collegiates - [Azure for Students](https://azure.microsoft.com/en-us/free/students/)| $100 in Azure for 12 months with free tier of services - no credit card required with academic verification
+* NSBE Collegiates - [Azure for Students](https://azure.microsoft.com/en-us/free/students/) | $100 in Azure for 12 months with free tier of services - no credit card required with academic verification
 
 * NSBE Professionals - [Azure Free Account](https://azure.microsoft.com/en-us/free/search/?&ef_id=EAIaIQobChMI-drA7Iqp6wIVEPDACh0gswLpEAAYASAAEgK9Q_D_BwE:G:s&OCID=AID2100131_SEM_EAIaIQobChMI-drA7Iqp6wIVEPDACh0gswLpEAAYASAAEgK9Q_D_BwE:G:s&gclid=EAIaIQobChMI-drA7Iqp6wIVEPDACh0gswLpEAAYASAAEgK9Q_D_BwE) | $200 in Azure for one month with free tier of services - requires a credit card and probably the best fit for faculty evaluating Azure for course instruction unless your organization has a grant or enterprise agreement.
 
