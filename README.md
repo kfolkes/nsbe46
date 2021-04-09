@@ -24,7 +24,7 @@ Install [Python 3.6 or higher](https://www.python.org/downloads/).
 ** Check the box that states to set download path. 
 
 
-## 1.b) Install Azure CLI 2.0.80 
+## 1.b) Install Azure CLI 2.21.0 
 
 Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 2.0.80 or higher, with which you run commands in any shell to provision and configure Azure resources.
 
